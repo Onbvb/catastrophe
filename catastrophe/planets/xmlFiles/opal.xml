@@ -1,0 +1,87 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+ <NameField>Opal</NameField>
+
+ <DialogueNode>
+  <Name>start</Name>
+  <EntryCondition>DEFAULT</EntryCondition>
+  <Dialogue>
+   <Page>Hello! I assume you've come to get my third of the code, no?</Page>
+  </Dialogue>
+
+  <DialogueOptionsList> 
+   <DialogueOption> 
+    <Text>Yes! I have!</Text>
+    <DialogueTarget>ansYes</DialogueTarget>
+   </DialogueOption>
+
+   <DialogueOption>
+    <Text>No.</Text>
+    <DialogueTarget>ansNo</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>ansYes</Name>
+  <Dialogue>
+   <Page>Oh! Wonderful! My part of the "code" is the Cyan-Tailed Bukrad!</Page> <!--I never want to hear about Bukrads again...-->
+  </Dialogue>
+  <!--Add the ship log for opal's code here.-->
+  <DialogueOptionsList>
+    <DialogueOption>
+        <Text>The... what?</Text>
+        <DialogueTarget>rant</DialogueTarget>
+    </DialogueOption>
+   <DialogueOption>
+    <Text>Thank you!</Text>
+    <DialogueTarget>rantEnd</DialogueTarget> <!-- Player is allowed to skip the rant, but please dont.-->
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+    <Name>rant</Name>
+    <Dialogue>
+        <Page>The Cyan-Tailed Bukrad! Which is different than the Cyan-Bellied or Cyan-Horned Bukrad, which are all named Bukrads despite all being on different planets.</Page>
+        <Page>Bukrads are actually found on many planets, usually within swamps! But not always! Did you know that no two Bukrad "species" are related!</Page>
+        <Page>Despite having the same common name, Bukrads are actually not a genetic family! They all just fill the same economic niche, and evolve very similarly.</Page>
+        <Page>This is because nature really likes to evolve a reptilian predator in swamps! Some Bukrads are up to four times the size of a Nomaian ship, whereas some are no bigger than the head of a staff!</Page>
+        <Page>You can imagine the number of scrolls written on Bukrads! Fun fact! The Cyan-Tailed Bukrad only has six scrolls mention it! One of which is my Thesis Paper!</Page>
+        <Page>I was born on the home planet of the Cyan-Tailed Bukrad! I grew up facinated with them, but I found out there are only five scrolls that mentioned it, two of which are biographies of Nomai that were also born on my home planet.</Page>
+        <Page>I loved going to the library and trying to find anything on them, as a xenobiologist! I ended up being the first Nomai to dissect one!</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>I... thank you?</Text>
+            <DialogueTarget>rantEnd</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+            <Text>Are you ok?</Text>
+            <DialogueTarget>opalIsNotOk</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+    <Name>opalIsNotOk</Name>
+    <Dialogue>
+        <Page>Yes, thank you for asking.</Page>
+        <Page>I need to sit down...</Page>
+    </Dialogue>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>ansNo</Name>
+  <Dialogue>
+   <Page>No? Ok! See you!</Page> <!--just like... let the player leave if they say no.-->
+  </Dialogue>
+ </DialogueNode>
+
+ <DialogueNode>
+    <Name>rantEnd</Name>
+    <Dialogue>
+        <Page>No problem!</Page>
+    </Dialogue>
+ </DialogueNode>
+</DialogueTree>

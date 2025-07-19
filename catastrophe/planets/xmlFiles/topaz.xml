@@ -1,0 +1,72 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+<NameField>Topaz</NameField>
+
+<DialogueNode>
+    <Name>start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>Hi!</Page>
+        <Page>Do you need something?</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>Can I have your code?</Text>
+            <DialogueTarget>canHasCheezborgar</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+            <Text>Not really, No.</Text>
+            <DialogueTarget>end</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+<DialogueNode>
+    <Name>canHasCheezborgar</Name>
+    <Dialogue>
+        <Page>Sure! If you can get me the scroll from the other side of the planet, I'd be happy to give you my code piece.</Page>
+        <Page>It ended up there after I tripped and dropped it, this being such a small planet.</Page>
+        <Page>I hate to ask it of you, but Diamond is one inch from collapsing, and my legs are malfunctioning.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>How does a leg malfunction?</Text>
+            <DialogueTarget>prosthesis</DialogueTarget>
+        </DialogueOption>
+        <DialogueOption>
+            <Text>I can get that for you!</Text>
+            <DialogueTarget>thanksForTheGold</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+<DialogueNode>
+    <Name>prosthesis</Name>
+    <Dialogue>
+        <Page>You can't see it because of the spacesuit, but my legs were horribly damaged in an accident a couple years back.</Page>
+        <Page>Our clan was fortunate enough to be close to a clan specializing in prosthetic limbs at the time, so I ended up getting my legs replaced.</Page>
+        <Page>Sometimes the joints lock up due to a software issue, but that isn't as much of a problem when Diamond isn't up to his third eye in work.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>I can get that scroll for you.</Text>
+            <DialogueTarget>thanksForTheGold</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+<DialogueNode>
+    <Name>thanksForTheGold</Name>
+    <Dialogue>
+        <Page>Thank you! I need it to record a log of the experiment.</Page>
+        <Page>When you get it you can just set it in the wall over there.</Page>
+    </Dialogue>
+    <SetCondition>talkedTopaz</SetCondition>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>helloAgain</Name>
+    <EntryCondition>talkedTopaz</EntryCondition>
+    <Dialogue>
+        <Page>Slight issue...</Page>
+        <Page>I might have forgotten my part of the code.</Page>
+        <Page>I do use that scroll to write everything down, however. So it should be there.</Page>
+    </Dialogue>
+</DialogueNode>
+</DialogueTree>

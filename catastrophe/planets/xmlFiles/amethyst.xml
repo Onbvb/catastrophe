@@ -1,0 +1,67 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Amethyst</NameField>
+    <DialogueNode>
+        <Name>start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>Hello, do you require something of me?</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>Yes! I'd love to know your secret phrase!</Text>
+                <DialogueTarget>redirectToCitrine</DialogueTarget>
+            </DialogueOption>
+
+            <DialogueOption>
+                <Text>Not really.</Text>
+                <DialogueTarget>end</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>redirectToCitrine</Name>
+        <Dialogue>
+            <Page>Hm...</Page>
+            <Page>You'll make a fine neutral third party, actually. You aren't even Nomai!</Page>
+            <Page>However, I can't remember what I set my code as, and I don't have the time to go through my notes, as we're nearing the Half-Hour mark!</Page>
+            <Page>I have to triple check everything, as something going wrong would be a catastrophe!</Page>
+            <Page>I did tell Citrine, though, so you should be able to get it from them.</Page>
+        </Dialogue>
+        <SetPersistentCondition>amethystRedirect</SetPersistentCondition>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>Ok, I'll go talk to them!</Text>
+                <DialogueTarget>end</DialogueTarget>
+            </DialogueOption>
+
+            <DialogueOption>
+                <Text>Half-Hour Mark?</Text>
+                <DialogueTarget>explainShrinkage</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>explainShrinkage</Name>
+        <Dialogue>
+            <Page>Every hour, on the hour, this star undergoes a curious transformation.</Page>
+            <Page>It shrinks down in size, yet retains the same energy!</Page>
+            <Page>An hour later, however, it balloons back to it's original size! Curious, no?</Page>
+            <Page>I believe it was Moisannite who discovered this, and shared it with the rest of our clan.</Page>
+            <Page>Our experiment is to see if we can harness or otherwise replicate this, as it would revolutionize storage and transport!</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>Interesting, anyways, I'm going to go talk to Citrine now.</Text>
+                <DialogueTarget>end</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+    
+    <DialogueNode>
+        <Name>end</Name>
+        <Dialogue>
+            <Page>I'll get back to checking this, then.</Page>
+            <Page>Can't have anything go wrong.</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

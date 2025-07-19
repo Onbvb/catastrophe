@@ -1,0 +1,61 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+<TextBlock>
+    <ID>1</ID>
+    <Text>ERROR: Fragmentary Data Found, Attempting Retrieval...</Text>
+</TextBlock>
+<TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>Best guess at reconstruction complete, displaying arc data now.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>ALERT: These arcs have been reconstructed from mixed format data.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>AMETHYST: Ready to begin, is everything in order?</Text>
+</TextBlock>
+<TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>OPAL: Everything is ready on my end.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>6</ID>
+    <ParentID>5</ParentID>
+    <Text>TOPAZ: Agreed, Diamond is only getting minor fluxuations, but nothing outside of our calculations.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>7</ID>
+    <ParentID>6</ParentID>
+    <Text>AMETHYST: Copy, engaging the device at the core.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>8</ID>
+    <ParentID>7</ParentID>
+    <Text>DIAMOND: Readings are steady.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>9</ID>
+    <ParentID>8</ParentID>
+    <Text>TOPAZ: Diamond passed out from stress, poor thing, but everything's st-</Text>
+</TextBlock>
+<TextBlock>
+    <ID>10</ID>
+    <ParentID>9</ParentID>
+    <Text>AMETHYST: Topaz? I heard an abrupt cut from your mic are you alr-</Text>
+</TextBlock>
+<TextBlock>
+    <ID>11</ID>
+    <ParentID>10</ParentID>
+    <Text>OPAL: Hello? Did I lose connec-</Text>
+</TextBlock>
+<TextBlock>
+    <ID>12</ID>
+    <ParentID>11</ParentID>
+    <Text>ERROR: See output logs at [planets/xmlFiles/error_folly.txt] ERROR CODE: im_so_lonely</Text>
+</TextBlock>
+</NomaiObject>

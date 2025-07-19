@@ -1,0 +1,32 @@
+An error has occured!
+Error Code: Catastrophe. That is what occurred.
+For a full report, please LET ME OUT. LET ME OUT. LET ME OUT.
+
+// OPAL: Where am I? I cannot feel my body, it feels... numb. Amethyst? Topaz? Are either of you with me?
+
+Error: object NOMAI_AMETHYST could not be found
+Error: object NOMAI_TOPAZ could not be found
+Error: In an instant. Like the collapse of a cave.
+
+// OPAL: AMETHYST? TOPAZ?? ANYBODY???
+
+Error: object NOMAI_AMETHYST could not be found
+Error: object NOMAI_TOPAZ could not be found
+Error: It's funny, in an experiment designed around the small, we ended up dismissing the smallest of fluxuations.
+
+// OPAL: I should still have my com- where are my hands? WHERE ARE MY LEGS???
+
+Error: object NOMAI_OPAL/arms/hands could not be found
+Error: object NOMAI_OPAL/legs could not be found
+Error: object NOMAI_OPAL could not be found
+Error: We should've known that the smallest of things would have an effect on our folly.
+Error: That's what it was. Folly. An attempt at transcending scale and the laws that govern reality.
+Error: No, not quite folly.
+Error: More like...
+Catastrophe.
+
+// Thank you for finding what remains of me.
+// And thank you for seeing our doomed experiment through to the end.
+// I couldn't imagine living infinite loops, like you.
+// But, I guess I am, now. In this place outside time or space.
+// Watching myself die every 22 minutes.

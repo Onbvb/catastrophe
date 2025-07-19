@@ -1,0 +1,166 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+<NameField>Experiment Controls</NameField>
+
+<DialogueNode>
+    <Name>start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>Welcome, [USER_NAME], please input credentials from the project leads.</Page>
+    </Dialogue>
+    <DialogueTarget>questionOne</DialogueTarget>
+</DialogueNode>
+
+<DialogueNode> <!--Amethyst-->
+    <Name>questionOne</Name>
+    <Dialogue>
+        <Page>Please Input [USER_AMETHYST]'s secret phrase.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>Program</Text>
+            <DialogueTarget>questionTwo</DialogueTarget>
+            <ConditionToSet>isCorrect</ConditionToSet>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>River</Text>
+            <DialogueTarget>questionTwo</DialogueTarget>
+            <ConditionToSet>isWrong</ConditionToSet>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>Computer</Text>
+            <DialogueTarget>questionTwo</DialogueTarget>
+            <ConditionToSet>isWrong</ConditionToSet>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>Pendulum</Text>
+            <DialogueTarget>questionTwo</DialogueTarget>
+            <ConditionToSet>isWrong</ConditionToSet>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode> <!--Topaz-->
+    <Name>questionTwo</Name>
+    <Dialogue>
+        <Page>Please Input [USER_TOPAZ]'s secret phrase.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>9446</Text>
+            <DialogueTarget>questionThree</DialogueTarget>
+            <ConditionToCancel>isCorrect</ConditionToCancel>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>4373</Text>
+            <DialogueTarget>questionThree</DialogueTarget>
+            <ConditionToCancel>isCorrect</ConditionToCancel>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>5337</Text>
+            <DialogueTarget>questionThree</DialogueTarget>
+            <ConditionToCancel>isWrong</ConditionToCancel>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>6785</Text>
+            <DialogueTarget>questionThree</DialogueTarget>
+            <ConditionToCancel>isCorrect</ConditionToCancel> <!--Any time the user enters an incorrect phrase it clears the correct variable (there is probably a better way of doing this lmao)-->
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode> <!--Opal-->
+    <Name>questionThree</Name>
+    <Dialogue>
+        <Page>Please Input [USER_OPAL]'s secret phrase</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>The Euriasian Bukrad</Text> <!-- This is actually a reference to Varic Vallenar's staff (Eurias, which contains the world spirit of an ocean planet) from The Last Horizon, go read it. Will Wight is a good author.-->
+            <DialogueTarget>processing</DialogueTarget>
+            <ConditionToCancel>isCorrect</ConditionToCancel>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>The Cyan-Bellied Bukrad</Text>
+            <DialogueTarget>processing</DialogueTarget>
+            <ConditionToCancel>isCorrect</ConditionToCancel>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>The Bukrad of Myth</Text>
+            <DialogueTarget>processing</DialogueTarget>
+            <ConditionToCancel>isCorrect</ConditionToCancel>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>The Cyan-Tailed Bukrad</Text>
+            <DialogueTarget>processing</DialogueTarget>
+            <ConditionToCancel>isWrong</ConditionToCancel>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>processing</Name>
+    <Dialogue>
+        <Page>Processing Answers...</Page>
+        <Page>Press any button to continue.</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+        <DialogueOption>
+            <RequiredCondition>isCorrect</RequiredCondition>
+            <Text>Press a button at random.</Text>
+            <DialogueTarget>correctEnd</DialogueTarget>
+        </DialogueOption>
+
+        <DialogueOption>
+            <RequiredCondition>isWrong</RequiredCondition> <!--If they are COMPLETELY wrong, they get a shiny red button to press :)-->
+            <Text>Press the shiny red button.</Text>
+            <DialogueTarget>wrongEnd</DialogueTarget>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>Press the power button.</Text>
+            <DialogueTarget>powerOff</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>wrongEnd</Name>
+    <Dialogue>
+        <Page>Incorrect answers inputted.</Page>
+        <Page>Goodbye.</Page> <!--It probably isnt a good idea to just outright remove it but it's really funny to me that you get everything wrong and it just... disappears.-->
+    </Dialogue>
+    <SetCondition>doohickeyIsGone</SetCondition>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>correctEnd</Name>
+    <Dialogue>
+        <Page>User Verified. Activating signal now.</Page>
+    </Dialogue>
+    <SetCondition>youDoneIt</SetCondition>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>congration</Name>
+    <EntryCondition>youDoneIt</EntryCondition>
+    <Dialogue>
+        <Page>User Verified. Signal Activated.</Page>
+    </Dialogue>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>powerOff</Name>
+    <Dialogue>
+        <Page>Restarting System...</Page>
+    </Dialogue>
+</DialogueNode>
+</DialogueTree>

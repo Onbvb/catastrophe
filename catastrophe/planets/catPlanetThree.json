@@ -1,0 +1,89 @@
+{
+  "name": "Outpost Gamma",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "Jam5",
+  "Base": {
+    "surfaceGravity": 6,
+    "surfaceSize": 50.1,
+    "groundSize": 50
+  },
+    "MapMarker": {
+    "enabled": true
+  },
+  "Orbit": {
+    "primaryBody": "Star-XZ-3563",
+    "semiMajorAxis": 1500,
+    "trueAnomaly": 240,
+    "inclination": 240,
+    "longitudeOfAscendingNode": 240
+  },
+  "AmbientLights": [
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tint": {
+        "a": 255,
+        "b": 255,
+        "r": 255,
+        "g": 255
+      }
+    }
+  ],
+  "Props": {
+    "details": [
+      {
+      "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+      "rename": "NOMAI_AMETHYST",
+"position": {"x": -22.35144, "y": 2.171856, "z": -44.67322},
+"rotation": {"x": 1.874783, "y": 296.4987, "z": 87.50912}
+      },
+      {
+      "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+      "rename": "NOMAI_CITRINE",
+"position": {"x": -24.19242, "y": 9.297192, "z": -42.7585},
+"rotation": {"x": 307.9482, "y": 313.5452, "z": 72.39981}
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder",
+"rename": "AMETHYST_COMPUTER",
+"position": {"x": -24.74812, "y": 1.50209, "z": -43.41974},
+"rotation": {"x": 341.8964, "y": 300.245, "z": 88.18879}
+      }
+    ],
+    "dialogue": [
+      {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/NOMAI_AMETHYST",
+          "position": {
+          "y": 2
+        }
+        },
+        "parentPath": "Sector/NOMAI_AMETHYST",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/xmlFiles/amethyst.xml",
+        "position": {
+          "y": 2
+        }
+      },
+      {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/NOMAI_CITRINE",
+          "position": {
+          "y": 2
+        }
+        },
+        "parentPath": "Sector/NOMAI_CITRINE",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/xmlFiles/citrine.xml",
+        "position": {
+          "y": 2
+        }
+      }
+    ]
+  } 
+}

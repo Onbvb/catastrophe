@@ -1,0 +1,66 @@
+{
+  "name": "Research Outpost Beta",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "Jam5",
+  "Base": {
+    "surfaceGravity": 6,
+    "surfaceSize": 50.1,
+    "groundSize": 50
+  },
+    "MapMarker": {
+    "enabled": true
+  },
+  "Orbit": {
+    "primaryBody": "Star-XZ-3563",
+    "semiMajorAxis": 2000,
+    "trueAnomaly": 120,
+    "inclination": 0,
+    "longitudeOfAscendingNode": 0
+  },
+  "AmbientLights": [
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tint": {
+        "a": 255,
+        "b": 255,
+        "r": 255,
+        "g": 255
+      }
+    }
+  ],
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "rename": "NOMAI_OPAL",
+        "position": {"x": 14.19105, "y": 4.145102, "z": -47.76434},
+        "rotation": {"x": 21.12649, "y": 75.29504, "z": 275.0989}
+      },
+      {"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder",
+"rename": "OPAL_COMPUTER",
+"position": {"x": 16.94916, "y": 4.9232, "z": -46.78128},
+"rotation": {"x": 49.58931, "y": 76.75798, "z": 278.7365}}
+    ],
+    "dialogue": [
+      {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/NOMAI_OPAL",
+          "position": {
+          "y": 2
+        }
+        },
+        "parentPath": "Sector/NOMAI_OPAL",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/xmlFiles/opal.xml",
+        "position": {
+          "y": 2
+        }
+      }
+    ]
+  }
+}

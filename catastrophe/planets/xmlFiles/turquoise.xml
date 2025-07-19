@@ -1,0 +1,43 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+<NameField>Turquoise</NameField>
+
+<DialogueNode>
+    <Name>start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>...</Page>
+        <Page>Hm? Yes?</Page>
+        <Page>Did you have something to ask me?</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+        <DialogueOption>
+            <Text>What are you doing?</Text>
+            <DialogueTarget>heIsLooking</DialogueTarget>
+        </DialogueOption>
+
+        <DialogueOption>
+            <Text>Not really.</Text>
+            <DialogueTarget>end</DialogueTarget>
+        </DialogueOption>
+    </DialogueOptionsList>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>heIsLooking</Name>
+    <Dialogue>
+        <Page>I'm looking over at the system over there.</Page>
+        <Page>The star is quite pretty, is it not?</Page>
+        <Page>Some Nomai that I know are over there.</Page>
+        <Page>I hope Amethyst is doing well...</Page>
+    </Dialogue>
+    <DialogueTarget>end</DialogueTarget>
+</DialogueNode>
+
+<DialogueNode>
+    <Name>end</Name>
+    <Dialogue>
+        <Page>Goodbye.</Page>
+    </Dialogue>
+</DialogueNode>
+</DialogueTree>

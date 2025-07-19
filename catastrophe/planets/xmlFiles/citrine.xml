@@ -1,0 +1,77 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Citrine</NameField>
+    <DialogueNode>
+        <Name>start</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>Hello! Are you here to help us with our experiment?</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <RequiredCondition>amethystRedirect</RequiredCondition>
+                <Text>Amethyst said that you had their code?</Text>
+                <DialogueTarget>riddle</DialogueTarget>
+            </DialogueOption>
+
+            <DialogueOption>
+                <Text>Yes, how can I help?</Text>
+                <DialogueTarget>howHelp</DialogueTarget>
+            </DialogueOption>
+
+            <DialogueOption>
+                <Text>No, I was just exploring.</Text>
+                <DialogueTarget>justExploring</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>howHelp</Name>
+        <Dialogue>
+            <Page>Hmmm... Well, you might actually be too late to do anything other than activate the computer to get the results of the test.</Page>
+            <Page>If you need the codes, you can talk to Amethyst, Topaz, or Opal!</Page>
+        </Dialogue>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>justExploring</Name>
+        <Dialogue>
+            <Page>Well, there isn't much around here except for the star and our bases, you'd be much better off exploring one of the other miniature systems near here.</Page>
+            <Page>I have to get back to writing puns about shrinking, though. Very important work, you see.</Page>
+        </Dialogue>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>riddle</Name>
+        <Dialogue>
+            <Page>He did? Splendid!</Page>
+            <Page>I couuuld just give it to you, but where's the fun in that?</Page>
+            <Page>I have a riddle prepared for you!</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>A riddle? Really?</Text>
+                <DialogueTarget>yesReally</DialogueTarget>
+            </DialogueOption>
+            <DialogueOption>
+                <Text>What's the riddle?</Text>
+                <DialogueTarget>theRiddle</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>yesReally</Name>
+        <Dialogue>
+            <Page>Yes, really! I love riddles!</Page>
+        </Dialogue>
+        <DialogueTarget>theRiddle</DialogueTarget>
+    </DialogueNode>
+    <DialogueNode>
+        <Name>theRiddle</Name>
+        <Dialogue>
+            <Page>Here it is:</Page>
+            <Page>I have no mouth, but I can speak</Page>
+            <Page>I have no legs, but I can run</Page>
+            <Page>I have no arms, but I can hang</Page>
+            <Page>What am I?</Page>
+            <Page>The answer should end up being Amethyst's code.</Page>
+        </Dialogue>
+    </DialogueNode>
+</DialogueTree>

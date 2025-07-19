@@ -1,0 +1,36 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+<TextBlock>
+<ID>1</ID>
+<Text>AMETHYST: Welcome, friends! If you've been invited to help with our project, please pilot your ship over to the XZ-3563 system.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>OPAL: Oh, and if you've been selected by committee, use the computer behind you to input the three part code.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>AMETHYST: Reminder: The three of us only know one of the three parts, to make sure that none of us can activate it alone.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>4</ID>
+    <ParentID>2</ParentID>
+    <Text>TOPAZ: Don't worry if you don't know where to go after you input the code, the code will also activate a frequency.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>DIAMOND: Query: What if the device fails to do it's purpose?</Text>
+</TextBlock>
+<TextBlock>
+    <ID>6</ID>
+    <ParentID>5</ParentID>
+    <Text>OPAL: That... is a good point, Diamond. I suppose the matching signal wouldn't exist, in that case.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>7</ID>
+    <ParentID>1</ParentID>
+    <Text>DIAMOND: We've used our ships to create three artificial planets in persuit of our goal, they don't have much on them besides us and our electronics, but we needed three seperate points for this, according to our calculations.</Text>
+</TextBlock>
+</NomaiObject>

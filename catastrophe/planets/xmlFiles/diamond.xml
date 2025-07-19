@@ -1,0 +1,12 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+<NameField>Diamond</NameField>
+
+<DialogueNode>
+    <Name>start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>Sorry! I can't talk right now! I'm making sure everything is in place!</Page>
+        <Page>If you need something I'm sure Topaz can help you!</Page>
+    </Dialogue>
+</DialogueNode>
+</DialogueTree>

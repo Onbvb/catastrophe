@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Catastrophe",
+  "starSystem": "Jam5",
+  "Base": {
+    "surfaceGravity": 12,
+    "surfaceSize": 200,
+    "groundSize": 201,
+    "hasFluidDetector": false
+  },
+  "MapMarker": {
+    "enabled": true
+  },
+  "Orbit": {
+    "isStatic": true,
+    "primaryBody": "Star-XZ-3563",
+    "semiMajorAxis": 0
+  },
+  "AmbientLights": [
+    {
+      "outerRadius": 300,
+      "innerRadius": 100,
+      "intensity": 0.8,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+    "tint": {
+        "a": 255,
+        "b": 120,
+        "g": 138,
+        "r": 7
+    }
+    }
+  ],
+  "Volumes": {
+  },
+    "Cloak": {
+    "radius": 500,
+    "innerCloakRadius": 300,
+    "nearCloakRadius": 300
+  },
+  "Props": {
+    "translatorText": [
+      {
+        "type": "scroll",
+        "position": {"x": -8.889583, "y": 198.5875, "z": 29.7487},
+        "rotation": {"x": 8.832457, "y": 337.0151, "z": 359.0215},
+        "xmlFile": "planets/xmlFiles/catastrophe.xml",
+        "seed": 14,
+        "rename": "Catastrophe",
+        "parentPath": "Sector"
+      }
+    ],
+    "signals": [
+      {
+        "audio": "TH_RadioSignal_LP",
+        "onlyAudibleToScope": true,
+        "frequency": "The Experiment",
+        "name": "Experiment Results",
+        "parentPath": "Sector/Catastrophe",
+        "isRelativeToParent": true,
+        "insideCloak": false
+      }
+    ]
+  }
+}

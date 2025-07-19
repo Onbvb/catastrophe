@@ -1,0 +1,108 @@
+{
+  "name": "Catastrophe Platform",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "Jam5",
+  "extras": {
+    "isPlatform": true
+  },
+  "Props": {
+    "details": [
+        {
+  "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder",
+  "removeChildren": [
+  ],
+  "removeComponents": false,
+  "scale": 1.0,
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "alignRadial": null,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 60
+  },
+  "isRelativeToParent": false,
+  "rename": "Doohickey",
+  "deactivationCondition": "doohickeyIsGone",
+  "blinkWhenActiveChanged": false
+},
+	{
+    "rename": "dummy",
+    "parentPath": "Sector/Doohickey",
+    "activationCondition": "youDoneIt",
+    "blinkWhenActiveChanged": false,
+    "isRelativeToParent": true
+  },
+{
+  "keepLoaded": true,
+  "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+  "removeChildren": [
+    "ArcSocket/Prefab_NOM_Scroll"
+],
+"blinkWhenActiveChanged": false,
+  "rotation": {
+    "x": 5.37258347E-06,
+    "y": 195.402664,
+    "z": 1.33036235E-06
+  },
+  "position": {
+    "x": 2.574976,
+    "y": 1.20997429E-05,
+    "z": 67.78013
+  },
+  "isRelativeToParent": false,
+  "rename": "welcomeBoard"
+},
+{
+  "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+  "rename": "NOMAI_TURQUOISE",
+  "position": {"x": -2.277416, "y": 1.209974E-05, "z": 68.19366},
+  "rotation": {"x": 5.613647E-06, "y": 0, "z": -2.023388E-07}
+}
+    ],
+    "translatorText": [
+        {
+            "rename": "welcomeScroll",
+            "type": "scroll",
+            "xmlFile": "planets/xmlFiles/welcomeMessage.xml",
+            "parentPath": "Sector/welcomeBoard/ArcSocket"
+        }
+    ],
+    "signals": [
+      {
+        "frequency": "The Experiment",
+        "onlyAudibleToScope": true,
+        "isRelativeToParent": true,
+        "parentPath": "Sector/Doohickey/dummy",
+        "name": "The Doohickey",
+        "audio": "TH_RadioSignal_LP",
+        "position": {
+          "y": 3
+        }
+      }
+    ],
+    "dialogue": [
+      {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/Doohickey",
+          "position": {
+            "y": 2
+          }
+        },
+        "xmlFile": "planets/xmlFiles/doohickey.xml",
+        "parentPath": "Sector/Doohickey",
+        "range": 3,
+        "position": {
+          "y": 2
+        },
+        "rename": "doohickeyInput",
+        "radius": 2,
+        "isRelativeToParent": true
+      }
+    ]
+  }
+}

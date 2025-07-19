@@ -1,0 +1,21 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+<TextBlock>
+<ID>1</ID>
+<Text>TOPAZ: Note to self: remember to get more oil for joints next time you see Onyx.</Text>
+</TextBlock>
+<TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>TOPAZ: Note to self: Code is 5337, DO NOT FORGET!</Text>
+</TextBlock>
+<TextBlock>
+    <ID>3</ID>
+    <ParentID>1</ParentID>
+    <Text>TOPAZ: Note to self: get Diamond something nice, he's been working his hind quarters off!</Text>
+</TextBlock>
+<TextBlock>
+    <ID>4</ID>
+    <ParentID>1</ParentID>
+    <Text>TOPAZ: Note to self: Make sure you send a message to Moonstone and Cinnabar when the experiment is complete letting them know their brothers are safe.</Text>
+</TextBlock>
+</NomaiObject>
