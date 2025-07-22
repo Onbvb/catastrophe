@@ -9,7 +9,10 @@
     "hasFluidDetector": false
   },
   "MapMarker": {
-    "enabled": true
+    "enabled": false
+  },
+  "ReferenceFrame": {
+    "enabled": false
   },
   "Orbit": {
     "isStatic": true,
@@ -35,6 +38,15 @@
     }
   ],
   "Volumes": {
+    "speedLimiterVolumes": [
+      {
+        "maxSpeed": 10,
+        "stoppingDistance": 300,
+        "radius": 200,
+        "rename": "stopKillingYourShip",
+        "maxEntryAngle": 360
+      }
+    ]
   },
     "Cloak": {
     "radius": 500,
@@ -59,9 +71,39 @@
         "onlyAudibleToScope": true,
         "frequency": "The Experiment",
         "name": "Experiment Results",
-        "parentPath": "Sector/Catastrophe",
+        "parentPath": "Sector/deadDoohickey",
         "isRelativeToParent": true,
         "insideCloak": false
+      }
+    ],
+    "details": [
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder",
+        "position": {"x": -15.35356, "y": 197.3992, "z": 29.70339},
+"rotation": {"x": 350.6664, "y": 139.6358, "z": 2.149439},
+        "isRelativeToParent": true,
+        "alignRadial": true,
+        "rename": "deadDoohickey"
+      }
+    ],
+    "dialogue": [
+      {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/deadDoohickey",
+          "position": {
+            "y": 2
+          }
+        },
+        "xmlFile": "planets/xmlFiles/doohickeyDead.xml",
+        "parentPath": "Sector/deadDoohickey",
+        "range": 3,
+        "position": {
+          "y": 2
+        },
+        "rename": "deadHickey",
+        "radius": 2,
+        "isRelativeToParent": true
       }
     ]
   }

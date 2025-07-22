@@ -61,6 +61,12 @@
   "rename": "NOMAI_TURQUOISE",
   "position": {"x": -2.277416, "y": 1.209974E-05, "z": 68.19366},
   "rotation": {"x": 5.613647E-06, "y": 0, "z": -2.023388E-07}
+},
+{
+  "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire",
+  "rename": "okHeresTheSleeper",
+  "position": {"x": -6.213893, "y": 1.192093E-05, "z": 65.6704},
+  "rotation": {"x": 1.875945E-06, "y": 110.7608, "z": -4.683719E-06}
 }
     ],
     "translatorText": [
@@ -100,6 +106,23 @@
           "y": 2
         },
         "rename": "doohickeyInput",
+        "radius": 2,
+        "isRelativeToParent": true
+      },
+      {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/NOMAI_TURQUOISE",
+          "position": {
+            "y": 2
+          }
+        },
+        "xmlFile": "planets/xmlFiles/turquoise.xml",
+        "parentPath": "Sector/NOMAI_TURQUOISE",
+        "range": 3,
+        "position": {
+          "y": 2
+        },
         "radius": 2,
         "isRelativeToParent": true
       }
