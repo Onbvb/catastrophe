@@ -12,7 +12,7 @@ Error: In an instant. Like the collapse of a cave.
 
 Error: object NOMAI_AMETHYST could not be found
 Error: object NOMAI_TOPAZ could not be found
-Error: It's funny, in an experiment designed around the small, we ended up dismissing the smallest of fluctuations.
+Error: It's funny, in an experiment designed around the small, we ended up dismissing the smallest of fluxuations.
 
 // OPAL: I should still have my com- where are my hands? WHERE ARE MY LEGS???
 

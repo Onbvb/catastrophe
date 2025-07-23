@@ -47,7 +47,27 @@
             <Page>It shrinks down in size, yet retains the same energy!</Page>
             <Page>An hour later, however, it balloons back to it's original size! Curious, no?</Page>
             <Page>I believe it was Moisannite who discovered this, and shared it with the rest of our clan.</Page>
-            <Page>Our experiment is to see if we can harness or otherwise replicate this, as it would revolutionize storage and transport!</Page>
+            <Page>Our experiment is to see if we can artifically induce this transformation, and we picked the half-hour mark to avoid any interference from the star's natural transformation.</Page>
+            <Page>Once we can do this at will, we can attempt to replicate it under more controlled circumstances, and then we can revolutionize storage and transport!</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>Interesting, anyways, I'm going to go talk to Citrine now.</Text>
+                <DialogueTarget>end</DialogueTarget>
+            </DialogueOption>
+
+            <DialogueOption>
+                <Text>How are you powering this? I don't see any solar panels.</Text>
+                <DialogueTarget>powerSolutions</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>powerSolutions</Name>
+        <Dialogue>
+            <Page>We actually need very little power, according to our calculations.</Page>
+            <Page>There's actually a cell with around one hundred times that inside the star, so that we can attempt this multiple times if needed.</Page>
         </Dialogue>
         <DialogueOptionsList>
             <DialogueOption>
