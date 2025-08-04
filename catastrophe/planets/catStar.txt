@@ -4,7 +4,7 @@
   "starSystem": "Jam5",
   "removeChildren": ["Sector/Star/Audio_Star/SurfaceAudio_Sun"],
   "Base": {
-    "centerOfSolarSystem": true,
+    "centerOfSolarSystem": false,
     "gravityFallOff": "inverseSquared",
     "surfaceSize": 501,
     "surfaceGravity": 10
@@ -41,5 +41,10 @@
     "lightRadius": 2500,
     "stellarDeathType": "default",
     "stellarRemnantType": "default"
+  },
+  "Orbit": {
+    "primaryBody": "Catastrophe",
+    "semiMajorAxis": 0,
+    "isStatic": true
   }
 }

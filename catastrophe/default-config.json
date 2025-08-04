@@ -1,4 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/config_schema.json",
-  "enabled": true
+  "enabled": true,
+  "settings": {
+    "Speedrunner Mode": {
+      "type": "toggle",
+      "title": "Speedrunner Mode",
+      "tooltip": "Makes the star explode faster (thank you vodblink for the idea)",
+      "value": false
+    }
+  }
 }
