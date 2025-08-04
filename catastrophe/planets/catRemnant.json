@@ -7,13 +7,18 @@
     "surfaceSize": 200,
     "groundSize": 201,
     "hasFluidDetector": false,
-    "centerOfSolarSystem": true
+    "centerOfSolarSystem": false
   },
   "MapMarker": {
     "enabled": false
   },
   "ReferenceFrame": {
     "enabled": false
+  },
+  "Orbit": {
+    "isStatic": true,
+    "primaryBody": "Star-XZ-3563",
+    "semiMajorAxis": 0
   },
   "AmbientLights": [
     {

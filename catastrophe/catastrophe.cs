@@ -79,7 +79,7 @@ namespace catastrophe
         } */
         public void PreSystemLoad(string system)
         {
-            if (system != "Jam5") //Let's try this...
+            if (system != "Jam5")
             {
                 return;
             }
@@ -92,17 +92,6 @@ namespace catastrophe
         // Maybe instead of a timer use TimeLoop.GetSecondsElapsed()?
         // Hell there might be an event for the star's supernova happening. Could check for that (since speedrunner mode would change the time it takes.)
 
-        //Attempted methods for doing speedrunner mode:
-        // Create the star using code (star generates on first loop only)
-        // Create the star using code after the system loads (failed)
-        // Create the entire system using code (failed)
-        // Have the system orbit a dummy object and create the star using code (star generates on second loop forward, orbits fail due to dummy object's lack of mass.)
-        //Ideas
-        // Dummy object, create entire system based on that object (star is static on it, everything else orbits star) - would probably end up breaking in the first loop, like attempt 4
-        // Uhhhhhhhh. Cry. and/or remove this feature idea.
-        // Have the system orbit catastrophe and make the star on runtime.
-        //... have i tried not forgetting to add a listener?
-        // I swear to everything holy if that was the issue im going to crash out.
         // This code is ass. Session Terminated.
     }
 

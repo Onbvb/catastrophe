@@ -11,7 +11,7 @@
     "enabled": true
   },
   "Orbit": {
-    "primaryBody": "Catastrophe",
+    "primaryBody": "Star-XZ-3563",
     "semiMajorAxis": 1500,
     "trueAnomaly": 240,
     "inclination": 240,
