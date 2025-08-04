@@ -1,0 +1,16 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+<NameField>Ernesto</NameField>
+
+<DialogueNode>
+    <Name>start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+        <Page>Hey, kid. You found me!</Page>
+        <Page>Don't tell the Jam Organizers, though.</Page>
+        <Page>I'm not technically supposed to be under the platform like this.</Page>
+        <Page>Actually, I'm going to get out of here before someone catches me.</Page>
+        <Page>Adios!</Page>
+    </Dialogue>
+    <SetCondition>ernestoRunsFromThePolice</SetCondition>
+</DialogueNode>
+</DialogueTree>

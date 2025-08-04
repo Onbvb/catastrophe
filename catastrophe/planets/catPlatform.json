@@ -67,6 +67,16 @@
   "rename": "okHeresTheSleeper",
   "position": {"x": -6.213893, "y": 1.192093E-05, "z": 65.6704},
   "rotation": {"x": 1.875945E-06, "y": 110.7608, "z": -4.683719E-06}
+},
+{
+  "path": "Anglerfish_Body/Beast_Anglerfish",
+  "removeChildren": ["B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"],
+  "scale": 0.02,
+  "rename": "FISH_ERNESTO",
+  "position": {"x": -0.001, "y": -9.7244, "z": 62.384}, 
+  "rotation": {"x": 6.8052, "y": 8.7261, "z": 6.406},
+  "deactivationCondition": "ernestoRunsFromThePolice",
+  "blinkWhenActiveChanged": false
 }
     ],
     "translatorText": [
@@ -119,6 +129,23 @@
         },
         "xmlFile": "planets/xmlFiles/turquoise.xml",
         "parentPath": "Sector/NOMAI_TURQUOISE",
+        "range": 3,
+        "position": {
+          "y": 2
+        },
+        "radius": 2,
+        "isRelativeToParent": true
+      },
+            {
+        "attentionPoint": {
+          "isRelativeToParent": true,
+          "parentPath": "Sector/FISH_ERNESTO",
+          "position": {
+            "y": 2
+          }
+        },
+        "xmlFile": "planets/xmlFiles/ernesto.xml",
+        "parentPath": "Sector/FISH_ERNESTO",
         "range": 3,
         "position": {
           "y": 2
